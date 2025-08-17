@@ -2,39 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Cofia Coconut Products Design System
+Premium Apple-style clean design with warm coconut tones
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cofia Brand Colors */
+    --cofia-brown: 22 54% 20%;           /* #4A2E1A - Primary Brown */
+    --cofia-cream: 43 81% 96%;           /* #FDF8ED - Cream Background */
+    --cofia-tan: 43 67% 60%;             /* #D1A653 - Tan Accent */
+    --cofia-green: 67 25% 65%;           /* #9EA56B - Coconut Green */
+    --cofia-spice: 347 59% 50%;          /* #B83248 - Alert/Spicepop */
+    --cofia-dark-brown: 25 59% 16%;      /* #3B2715 - Text Dark Brown */
+    
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cofia-cream)), hsl(var(--cofia-tan) / 0.1));
+    --gradient-premium: linear-gradient(180deg, hsl(var(--cofia-brown)), hsl(var(--cofia-dark-brown)));
+    --gradient-coconut: linear-gradient(45deg, hsl(var(--cofia-green) / 0.8), hsl(var(--cofia-cream)));
+    
+    /* Shadows */
+    --shadow-premium: 0 20px 60px -12px hsl(var(--cofia-brown) / 0.2);
+    --shadow-card: 0 8px 32px -8px hsl(var(--cofia-brown) / 0.1);
+    --shadow-button: 0 4px 16px -4px hsl(var(--cofia-brown) / 0.3);
+    
+    /* Base Design System */
+    --background: var(--cofia-cream);
+    --foreground: var(--cofia-dark-brown);
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: var(--cofia-cream);
+    --card-foreground: var(--cofia-dark-brown);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: var(--cofia-cream);
+    --popover-foreground: var(--cofia-dark-brown);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--cofia-brown);
+    --primary-foreground: var(--cofia-cream);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--cofia-tan);
+    --secondary-foreground: var(--cofia-dark-brown);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--cofia-tan);
+    --muted-foreground: var(--cofia-dark-brown);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--cofia-green);
+    --accent-foreground: var(--cofia-dark-brown);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: var(--cofia-spice);
+    --destructive-foreground: var(--cofia-cream);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: var(--cofia-tan);
+    --input: var(--cofia-cream);
+    --ring: var(--cofia-brown);
 
     --radius: 0.5rem;
 

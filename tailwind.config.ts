@@ -18,12 +18,25 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				// Cofia Brand Colors
+				'cofia-brown': 'hsl(var(--cofia-brown))',
+				'cofia-cream': 'hsl(var(--cofia-cream))',
+				'cofia-tan': 'hsl(var(--cofia-tan))',
+				'cofia-green': 'hsl(var(--cofia-green))',
+				'cofia-spice': 'hsl(var(--cofia-spice))',
+				'cofia-dark-brown': 'hsl(var(--cofia-dark-brown))',
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
