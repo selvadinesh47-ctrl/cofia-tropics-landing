@@ -251,10 +251,11 @@ function showProductModal(productType) {
     showNotification(`${product.name}: ${product.description}`, 'info');
 }
 
-// Distributor Modal (simplified as notification for this implementation)
+// Distributor Modal - Redirect to WhatsApp
 function showDistributorModal() {
-    const message = 'Distributor Program: Join our global network! Contact us at partnerships@cofia.com or call +91 98765 43210 for exclusive distributor opportunities.';
-    showNotification(message, 'success');
+    const message = encodeURIComponent("Hello! I'm interested in becoming a distributor for your coconut chips. Please share the details and requirements. Thank you!");
+    const whatsappUrl = `https://wa.me/919994898713?text=${message}`;
+    window.open(whatsappUrl, '_blank');
 }
 
 // Floating Animations
