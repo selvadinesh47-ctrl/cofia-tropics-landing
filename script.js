@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     heroButtons.forEach(button => {
         button.addEventListener('click', function() {
             if (this.textContent.includes('Shop')) {
-                showNotification('Shop feature coming soon! Stay tuned for our online store.', 'info');
+                window.location.href = '/order';
             } else if (this.textContent.includes('Distributor')) {
                 showDistributorModal();
             }
