@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const collectionButton = document.querySelector('.btn-collection');
     if (collectionButton) {
         collectionButton.addEventListener('click', function() {
-            showNotification('Complete collection coming soon! Follow us for updates.', 'info');
+            window.location.href = '/order';
         });
     }
 
