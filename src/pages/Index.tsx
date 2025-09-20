@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -9,12 +10,22 @@ const Index = () => {
           <p className="text-lg text-orange-600 mb-8">
             For the full Cofia experience, please visit our main site.
           </p>
-          <button 
-            onClick={() => window.location.href = '/index.html'}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold"
-          >
-            Visit Main Site
-          </button>
+          
+          {/* Temporary navigation links */}
+          <div className="space-x-4 mb-8">
+            <Link 
+              to="/order" 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold inline-block"
+            >
+              Go to Order Page
+            </Link>
+            <button 
+              onClick={() => window.location.href = '/index.html'}
+              className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold"
+            >
+              Visit Main Site
+            </button>
+          </div>
         </div>
       </div>
     </div>
