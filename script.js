@@ -78,7 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
     heroButtons.forEach(button => {
         button.addEventListener('click', function() {
             if (this.textContent.includes('Shop')) {
-                window.location.href = '/order';
+                // Navigate back to React app then to order page
+                window.location.href = '/#/order';
             } else if (this.textContent.includes('Distributor')) {
                 showDistributorModal();
             }
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const collectionButton = document.querySelector('.btn-collection');
     if (collectionButton) {
         collectionButton.addEventListener('click', function() {
-            window.location.href = '/order';
+            window.location.href = '/#/order';
         });
     }
 
