@@ -18,11 +18,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#F5E6D3] via-[#F0DCC9] to-[#EDD4BF] overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-orange-300 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-yellow-300 rounded-full blur-xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-[#8B4513] rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 bg-[#D2B48C] rounded-full blur-xl"></div>
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
@@ -40,12 +40,12 @@ const Hero = () => {
 
             {/* Main Heading */}
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-              <span className="block text-orange-900 leading-tight">Simply Coconut.</span>
-              <span className="block text-orange-800 leading-tight">Pure Goodness.</span>
+              <span className="block text-[#6B4423] leading-tight">Simply Coconut.</span>
+              <span className="block text-[#8B4513] leading-tight">Pure Goodness.</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl text-orange-700 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-xl text-[#8B4513] mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Authentic coconut snacks crafted for the world. Experience the pure taste of premium coconut products, trusted by millions globally.
             </p>
 
@@ -54,7 +54,7 @@ const Hero = () => {
               <Button
                 onClick={handleShopNow}
                 size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-[#8B4513] hover:bg-[#6B4423] text-[#F5E6D3] px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Shop Now
               </Button>
@@ -62,7 +62,7 @@ const Hero = () => {
                 onClick={handleDistributor}
                 variant="outline"
                 size="lg"
-                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                className="border-2 border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-[#F5E6D3] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
               >
                 Become a Distributor
               </Button>
@@ -70,9 +70,9 @@ const Hero = () => {
 
             {/* Trust Indicators */}
             <div className="text-center lg:text-left">
-              <p className="text-orange-600 text-sm font-medium mb-2">Trusted by over</p>
-              <p className="text-4xl font-bold text-orange-800 mb-2">10000+</p>
-              <p className="text-orange-600 text-sm">happy customers worldwide</p>
+              <p className="text-[#8B4513] text-sm font-medium mb-2">Trusted by over</p>
+              <p className="text-4xl font-bold text-[#6B4423] mb-2">10000+</p>
+              <p className="text-[#8B4513] text-sm">happy customers worldwide</p>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ const Hero = () => {
           <div className="flex-1 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Product Badge */}
-              <div className="absolute -top-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold transform rotate-12 shadow-lg z-10">
+              <div className="absolute -top-4 -right-4 bg-[#B83248] text-white px-4 py-2 rounded-full text-sm font-bold transform rotate-12 shadow-lg z-10">
                 100% Natural
               </div>
               
@@ -94,7 +94,7 @@ const Hero = () => {
                 
                 {/* Floating animation */}
                 <div className="absolute inset-0 animate-pulse opacity-20">
-                  <div className="w-full h-full bg-gradient-to-r from-orange-300 to-yellow-300 rounded-3xl blur-xl"></div>
+                  <div className="w-full h-full bg-gradient-to-r from-[#D2B48C] to-[#F5E6D3] rounded-3xl blur-xl"></div>
                 </div>
               </div>
             </div>
@@ -104,8 +104,8 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-orange-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-orange-400 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-[#8B4513] rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-[#8B4513] rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

@@ -45,10 +45,10 @@ const Products = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-orange-900 mb-6">
+          <h2 className="text-5xl font-bold text-[#6B4423] mb-6">
             Our Premium Collection
           </h2>
-          <p className="text-xl text-orange-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#8B4513] max-w-3xl mx-auto leading-relaxed">
             Discover our handcrafted coconut chips, each flavor carefully developed to deliver 
             an extraordinary taste experience that celebrates the natural goodness of coconut.
           </p>
@@ -59,7 +59,7 @@ const Products = () => {
           {products.map((product) => (
             <Card 
               key={product.id}
-              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer bg-gradient-to-br from-white to-orange-50"
+              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer bg-gradient-to-br from-white to-[#F5E6D3]"
               onClick={() => handleProductClick(product.id)}
             >
               {/* Product Image */}
@@ -74,13 +74,13 @@ const Products = () => {
 
               {/* Product Info */}
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-orange-800 mb-4 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-2xl font-bold text-[#6B4423] mb-4 group-hover:text-[#8B4513] transition-colors">
                   {product.name}
                 </h3>
-                <p className="text-orange-600 leading-relaxed mb-6">
+                <p className="text-[#8B4513] leading-relaxed mb-6">
                   {product.description}
                 </p>
-                <div className="inline-flex items-center text-orange-500 font-medium group-hover:text-orange-600 transition-colors">
+                <div className="inline-flex items-center text-[#8B4513] font-medium group-hover:text-[#6B4423] transition-colors">
                   <span>Click to explore</span>
                   <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
@@ -91,13 +91,13 @@ const Products = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <p className="text-xl text-orange-700 mb-6 font-medium">
+          <p className="text-xl text-[#8B4513] mb-6 font-medium">
             Want to try all flavors?
           </p>
           <Button
             onClick={handleShopCollection}
             size="lg"
-            className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-[#8B4513] to-[#6B4423] hover:from-[#6B4423] hover:to-[#8B4513] text-[#F5E6D3] px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Shop Complete Collection
           </Button>

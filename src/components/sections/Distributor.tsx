@@ -34,7 +34,7 @@ const Distributor = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-600 to-orange-800 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[#8B4513] to-[#6B4423] text-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -47,7 +47,7 @@ const Distributor = () => {
           <h2 className="text-5xl font-bold mb-6">
             Become Our Distribution Partner
           </h2>
-          <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#F0DCC9] max-w-3xl mx-auto leading-relaxed">
             Join our growing network of successful distributors and bring premium 
             coconut products to your community. Unlock exclusive benefits and 
             build a profitable partnership with Cofia.
@@ -70,7 +70,7 @@ const Distributor = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-orange-100 leading-relaxed">
+                <p className="text-[#F0DCC9] leading-relaxed">
                   {benefit.description}
                 </p>
               </CardContent>
@@ -82,7 +82,7 @@ const Distributor = () => {
         <div className="text-center">
           <div className="max-w-2xl mx-auto mb-8">
             <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
-            <p className="text-xl text-orange-100 mb-8">
+            <p className="text-xl text-[#F0DCC9] mb-8">
               Take the first step towards a successful partnership. Contact us today 
               to learn more about distribution opportunities in your area.
             </p>
@@ -91,16 +91,16 @@ const Distributor = () => {
           <Button
             onClick={handleBecomeDistributor}
             size="lg"
-            className="bg-white text-orange-600 hover:bg-orange-50 px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-white text-[#8B4513] hover:bg-[#F5E6D3] px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             Apply Now - Become a Distributor
           </Button>
 
           {/* Contact Info */}
-          <div className="mt-8 text-orange-100">
+          <div className="mt-8 text-[#F0DCC9]">
             <p className="text-lg">
               Or call us directly at{' '}
-              <a href="tel:+919994898713" className="font-semibold text-white hover:text-orange-200 transition-colors">
+              <a href="tel:+919994898713" className="font-semibold text-white hover:text-[#F0DCC9] transition-colors">
                 +91 99948 98713
               </a>
             </p>

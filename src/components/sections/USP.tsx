@@ -45,7 +45,7 @@ const stats = [
 
 const USP = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-orange-600 to-orange-700 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-[#8B4513] to-[#6B4423] text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full" style={{
@@ -69,9 +69,9 @@ const USP = () => {
               </h3>
               
               {/* Description */}
-              <p className="text-orange-100 text-lg">
-                {item.description}
-              </p>
+            <p className="text-[#F0DCC9] text-lg">
+              {item.description}
+            </p>
             </div>
           ))}
         </div>
@@ -80,7 +80,7 @@ const USP = () => {
         <div className="border-t border-white/20 pt-16">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold mb-4">Trusted Worldwide</h3>
-            <p className="text-xl text-orange-100">Join thousands who choose Cofia for pure coconut goodness</p>
+            <p className="text-xl text-[#F0DCC9]">Join thousands who choose Cofia for pure coconut goodness</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -89,7 +89,7 @@ const USP = () => {
                 <div className="text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
-                <div className="text-xl text-orange-100 font-medium">
+                <div className="text-xl text-[#F0DCC9] font-medium">
                   {stat.label}
                 </div>
               </div>

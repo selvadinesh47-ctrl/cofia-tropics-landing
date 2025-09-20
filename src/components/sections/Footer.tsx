@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-orange-900 text-white">
+    <footer className="bg-[#6B4423] text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -24,7 +24,7 @@ const Footer = () => {
               />
               <span className="text-2xl font-bold">Cofia</span>
             </div>
-            <p className="text-orange-200 leading-relaxed mb-6 max-w-md">
+            <p className="text-[#F0DCC9] leading-relaxed mb-6 max-w-md">
               Premium coconut products crafted with love and tradition. 
               Experience the pure taste of authentic coconut snacks, 
               trusted by thousands worldwide.
@@ -34,28 +34,28 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                className="w-10 h-10 bg-orange-800 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors duration-300"
+                className="w-10 h-10 bg-[#8B4513] rounded-full flex items-center justify-center hover:bg-[#6B4423] transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-orange-800 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors duration-300"
+                className="w-10 h-10 bg-[#8B4513] rounded-full flex items-center justify-center hover:bg-[#6B4423] transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-orange-800 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors duration-300"
+                className="w-10 h-10 bg-[#8B4513] rounded-full flex items-center justify-center hover:bg-[#6B4423] transition-colors duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-orange-800 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors duration-300"
+                className="w-10 h-10 bg-[#8B4513] rounded-full flex items-center justify-center hover:bg-[#6B4423] transition-colors duration-300"
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#story" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   About Us
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#products" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Our Story
                 </a>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#contact" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Careers
                 </a>
@@ -94,7 +94,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#contact" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Press
                 </a>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#contact" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Contact Us
                 </a>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   FAQ
                 </a>
@@ -125,7 +125,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Shipping Info
                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#" 
-                  className="text-orange-200 hover:text-white transition-colors duration-300"
+                  className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
                 >
                   Returns
                 </a>
@@ -143,10 +143,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-orange-800 pt-8">
+        <div className="border-t border-[#8B4513] pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright */}
-            <div className="text-orange-200 mb-4 md:mb-0">
+            <div className="text-[#F0DCC9] mb-4 md:mb-0">
               <p>&copy; 2024 Cofia Coconut Products. All rights reserved.</p>
             </div>
 
@@ -154,19 +154,19 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a 
                 href="#" 
-                className="text-orange-200 hover:text-white transition-colors duration-300"
+                className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
               >
                 Privacy Policy
               </a>
               <a 
                 href="#" 
-                className="text-orange-200 hover:text-white transition-colors duration-300"
+                className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
               >
                 Terms of Service
               </a>
               <a 
                 href="#" 
-                className="text-orange-200 hover:text-white transition-colors duration-300"
+                className="text-[#F0DCC9] hover:text-white transition-colors duration-300"
               >
                 Sitemap
               </a>
@@ -178,7 +178,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center z-50"
+        className="fixed bottom-8 right-8 w-12 h-12 bg-[#8B4513] hover:bg-[#6B4423] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center z-50"
         aria-label="Scroll to top"
       >
         ↑
