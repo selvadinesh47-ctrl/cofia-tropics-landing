@@ -229,7 +229,7 @@ function removeNotification(notification) {
 function showProductModal(productType) {
     const products = {
         vanilla: {
-            name: 'Vanilla Coconut Chips',
+            name: 'Velvet Vanilla',
             description: 'Our premium vanilla coconut chips offer a perfect blend of sweet vanilla flavor and crispy coconut texture. Made from the finest coconuts and natural vanilla extract.',
             features: ['100% Natural Vanilla', 'No Artificial Flavors', 'Gluten-Free', 'Rich in Fiber']
         },
