@@ -40,11 +40,11 @@ const DistributorSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-8 max-w-md mx-auto">
               <div className="text-center">
-                <p className="text-2xl font-playfair font-bold text-cofia-brown">10M+</p>
+                <p className="text-2xl font-playfair font-bold text-cofia-brown">10000+</p>
                 <p className="text-xs text-cofia-dark-brown/60 font-poppins">Customers</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-playfair font-bold text-cofia-brown">50+</p>
+                <p className="text-2xl font-playfair font-bold text-cofia-brown">2+</p>
                 <p className="text-xs text-cofia-dark-brown/60 font-poppins">Countries</p>
               </div>
               <div className="text-center">

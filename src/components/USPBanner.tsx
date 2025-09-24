@@ -71,15 +71,15 @@ const USPBanner = () => {
           <div className="mt-16 pt-12 border-t border-cofia-cream/20">
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">10M+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">10000+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Happy Customers</p>
               </div>
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">50+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">2+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Countries Served</p>
               </div>
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">15+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">2+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Years Experience</p>
               </div>
             </div>

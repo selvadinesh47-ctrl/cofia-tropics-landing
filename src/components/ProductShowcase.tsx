@@ -1,4 +1,6 @@
-import productFlavours from "@/assets/product-flavours.jpg";
+import vv from "@/assets/vv.jpg";
+import sp from "@/assets/sp.jpg";
+import gc from "@/assets/gc.jpg";
 
 const ProductShowcase = () => {
   const products = [
@@ -7,21 +9,24 @@ const ProductShowcase = () => {
       name: "Vanilla Coconut Chips",
       description: "Smooth vanilla flavor with crispy coconut",
       color: "bg-gradient-to-br from-yellow-100 to-orange-100",
-      tagColor: "bg-yellow-200 text-yellow-800"
+      tagColor: "bg-yellow-200 text-yellow-800",
+      img:vv
     },
     {
       id: 2,
       name: "Spice Pop Coconut",
       description: "Bold spicy kick with coconut crunch",
       color: "bg-gradient-to-br from-red-100 to-pink-100",
-      tagColor: "bg-red-200 text-red-800"
+      tagColor: "bg-red-200 text-red-800",
+      img:sp
     },
     {
       id: 3,
       name: "Golden Crunch",
       description: "Classic toasted coconut perfection",
       color: "bg-gradient-to-br from-amber-100 to-yellow-100",
-      tagColor: "bg-amber-200 text-amber-800"
+      tagColor: "bg-amber-200 text-amber-800",
+      img:gc
     }
   ];
 
@@ -51,7 +56,7 @@ const ProductShowcase = () => {
                 <div className={`${product.color} p-8 relative overflow-hidden`}>
                   <div className="aspect-square rounded-2xl overflow-hidden bg-white/50 backdrop-blur-sm">
                     <img 
-                      src={productFlavours} 
+                      src={product.img} 
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
