@@ -6,50 +6,51 @@ import { Badge } from "@/components/ui/badge";
 import { Plus, Minus, ShoppingCart, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import cofiaLogo from "@/assets/cofia-logo.png";
-import productFlavours from "@/assets/product-flavours.jpg";
-import heroProduct from "@/assets/hero-coconut-product.jpg";
+import spImage from "@/assets/sp.jpg";
+import gcImage from "@/assets/gc.jpg";
+import vvImage from "@/assets/vv.jpg";
 
 interface Product {
   id: string;
   name: string;
   price: number;
+  originalPrice: number;
   image: string;
   description: string;
   weight: string;
+  discount: string;
 }
 
 const products: Product[] = [
   {
     id: "1",
-    name: "Classic Coconut Chips",
-    price: 250,
-    image: heroProduct,
-    description: "Crispy and naturally sweet coconut chips",
-    weight: "200g"
+    name: "Spice Pop Coconut",
+    price: 299,
+    originalPrice: 349,
+    image: spImage,
+    description: "Bold spices meet premium coconut crunch",
+    weight: "200g",
+    discount: "15% OFF"
   },
   {
     id: "2", 
-    name: "Spiced Coconut Mix",
-    price: 300,
-    image: productFlavours,
-    description: "Traditional spices with coconut goodness",
-    weight: "200g"
+    name: "Garlic Crunch Coconut",
+    price: 279,
+    originalPrice: 329,
+    image: gcImage,
+    description: "Aromatic garlic with crispy coconut perfection",
+    weight: "200g",
+    discount: "15% OFF"
   },
   {
     id: "3",
-    name: "Premium Coconut Flakes",
-    price: 350,
-    image: heroProduct,
-    description: "Premium quality coconut flakes",
-    weight: "250g"
-  },
-  {
-    id: "4",
-    name: "Coconut Variety Pack",
-    price: 750,
-    image: productFlavours,
-    description: "Mix of all our best selling flavours",
-    weight: "500g"
+    name: "Vanilla Velvet Coconut",
+    price: 329,
+    originalPrice: 379,
+    image: vvImage,
+    description: "Smooth vanilla essence with coconut luxury",
+    weight: "200g",
+    discount: "13% OFF"
   }
 ];
 
@@ -157,14 +158,22 @@ Please confirm availability and delivery details.`;
 
             <div className="grid sm:grid-cols-2 gap-6">
               {products.map(product => (
-                <Card key={product.id} className="border-cofia-tan/30 hover:shadow-lg transition-shadow">
+                <Card key={product.id} className="border-cofia-tan/30 hover:shadow-[var(--shadow-premium)] transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute top-3 right-3 z-10">
+                    <Badge variant="destructive" className="bg-cofia-spice text-cofia-cream font-poppins font-semibold px-3 py-1 shadow-md">
+                      {product.discount}
+                    </Badge>
+                  </div>
                   <CardHeader className="pb-4">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-48 object-cover rounded-lg mb-4"
-                    />
-                    <CardTitle className="font-playfair text-xl text-cofia-dark-brown">
+                    <div className="relative overflow-hidden rounded-lg mb-4 group">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-cofia-dark-brown/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <CardTitle className="font-playfair text-xl text-cofia-dark-brown mb-2">
                       {product.name}
                     </CardTitle>
                     <p className="text-sm text-cofia-dark-brown/70 font-poppins">
@@ -173,17 +182,23 @@ Please confirm availability and delivery details.`;
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex justify-between items-center">
-                      <div>
-                        <p className="text-2xl font-playfair font-bold text-cofia-brown">₹{product.price}</p>
-                        <Badge variant="secondary" className="text-xs">{product.weight}</Badge>
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <p className="text-2xl font-playfair font-bold text-cofia-brown">₹{product.price}</p>
+                          <p className="text-sm font-poppins text-cofia-dark-brown/50 line-through">₹{product.originalPrice}</p>
+                        </div>
+                        <Badge variant="secondary" className="text-xs bg-cofia-green/20 text-cofia-dark-brown border-cofia-green/30">
+                          {product.weight}
+                        </Badge>
                       </div>
                       <Button 
                         onClick={() => addToCart(product)}
-                        variant="hero"
+                        variant="premium"
                         size="sm"
+                        className="shadow-[var(--shadow-button)] hover:shadow-[var(--shadow-premium)]"
                       >
                         <Plus className="w-4 h-4 mr-1" />
-                        Add
+                        Add to Cart
                       </Button>
                     </div>
                   </CardContent>
