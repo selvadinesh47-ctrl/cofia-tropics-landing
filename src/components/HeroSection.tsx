@@ -45,7 +45,7 @@ const HeroSection = () => {
                 variant="hero-outline" 
                 size="lg" 
                 className="min-w-[200px]"
-                onClick={() => window.open(`https://wa.me/919876543210?text=${encodeURIComponent('Hi, I am interested in your product and would like to request more information.')}`, '_blank')}
+                onClick={() => window.open(`https://wa.me/919994898713?text=${encodeURIComponent('Hi, I am interested in your product and would like to request more information.')}`, '_blank')}
               >
                 Become a Distributor
               </Button>
