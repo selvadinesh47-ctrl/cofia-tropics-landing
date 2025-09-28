@@ -53,7 +53,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-poppins font-semibold text-cofia-dark-brown">Address</p>
-                  <p className="text-cofia-dark-brown/70 font-poppins">Kerala, India 682001</p>
+                  <p 
+                    className="text-cofia-dark-brown/70 font-poppins cursor-pointer hover:text-cofia-brown transition-colors"
+                    onClick={() => window.open('https://maps.app.goo.gl/48jRXy1CiZ9yMnXx8', '_blank')}
+                  >
+                    1172b, Panatham Patti, Metrathi, Tamil Nadu 642203
+                  </p>
                 </div>
               </div>
             </div>
