@@ -38,7 +38,12 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button variant="hero" size="lg" className="min-w-[160px]">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="min-w-[160px]"
+                onClick={() => window.location.href = '/order'}
+              >
                 Shop Now
               </Button>
               <Button 
