@@ -31,39 +31,49 @@ const ContactSection = () => {
             </div>
             
             {/* Contact Info */}
-            <div className="bg-cofia-cream/50 rounded-2xl p-6 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-cofia-brown rounded-full flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-cofia-cream" />
+            <div className="bg-white rounded-2xl p-6 md:p-8 space-y-6 shadow-[var(--shadow-card)] border border-cofia-tan/20">
+              <div className="flex items-start gap-4">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <Phone className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
                 </div>
-                <div>
-                  <p className="font-poppins font-semibold text-cofia-dark-brown">Phone</p>
-                  <p className="text-cofia-dark-brown/70 font-poppins">+91 99948 98713</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-cofia-brown rounded-full flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-cofia-cream" />
-                </div>
-                <div>
-                  <p className="font-poppins font-semibold text-cofia-dark-brown">Email</p>
-                  <p className="text-cofia-dark-brown/70 font-poppins">hello@cofia.com</p>
+                <div className="flex-1 min-w-0">
+                  <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Phone</p>
+                  <a 
+                    href="tel:+919994898713"
+                    className="text-cofia-brown font-poppins font-medium text-base md:text-lg hover:underline block break-all"
+                  >
+                    +91 99948 98713
+                  </a>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-cofia-brown rounded-full flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-cofia-cream" />
+              <div className="flex items-start gap-4 pt-2 border-t border-cofia-tan/20">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <Mail className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
                 </div>
-                <div>
-                  <p className="font-poppins font-semibold text-cofia-dark-brown">Address</p>
-                  <p 
-                    className="text-cofia-dark-brown/70 font-poppins cursor-pointer hover:text-cofia-brown transition-colors"
-                    onClick={() => window.open('https://maps.app.goo.gl/48jRXy1CiZ9yMnXx8', '_blank')}
+                <div className="flex-1 min-w-0">
+                  <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Email</p>
+                  <a 
+                    href="mailto:hello@cofia.com"
+                    className="text-cofia-brown font-poppins font-medium text-base md:text-lg hover:underline block break-all"
+                  >
+                    hello@cofia.com
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4 pt-2 border-t border-cofia-tan/20">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <MapPin className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Address</p>
+                  <button 
+                    className="text-cofia-brown font-poppins font-medium text-base md:text-lg hover:underline text-left transition-colors"
+                    onClick={() => window.open('https://maps.app.goo.gl/GCjZ1jnoHPUHh63y8', '_blank')}
                   >
                     1172b, Panatham Patti, Metrathi, Tamil Nadu 642203
-                  </p>
+                  </button>
                 </div>
               </div>
             </div>
