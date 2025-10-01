@@ -59,7 +59,7 @@ const HeroSection = () => {
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-cofia-tan/30">
               <p className="text-sm text-cofia-dark-brown/60 font-poppins mb-3">Trusted by over</p>
-              <p className="text-3xl font-playfair font-bold text-cofia-brown">10000+</p>
+              <p className="text-3xl font-playfair font-bold text-cofia-brown">1000+</p>
               <p className="text-sm text-cofia-dark-brown/60 font-poppins">happy customers worldwide</p>
             </div>
           </div>

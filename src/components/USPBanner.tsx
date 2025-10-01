@@ -71,7 +71,7 @@ const USPBanner = () => {
           <div className="mt-16 pt-12 border-t border-cofia-cream/20">
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">10000+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">1000+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Happy Customers</p>
               </div>
               <div>

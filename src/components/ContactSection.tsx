@@ -10,18 +10,23 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column - Contact Image/Info */}
           <div className="space-y-8">
-            {/* Coconut Plantation Image */}
+            {/* Map Location */}
             <div className="relative h-80 lg:h-full min-h-[400px] rounded-3xl overflow-hidden shadow-[var(--shadow-premium)]">
-              <div className="absolute inset-0 bg-gradient-to-br from-cofia-green/80 to-cofia-brown/60 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto backdrop-blur-sm">
-                    <MapPin className="w-12 h-12" />
-                  </div>
-                  <h3 className="font-playfair text-2xl font-bold mb-4">Visit Our Farms</h3>
-                  <p className="font-poppins text-white/90 leading-relaxed">
-                    Experience the authentic coconut cultivation process in the heart of India's coconut country.
-                  </p>
-                </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0987!2d77.0234!3d10.4321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI1JzU1LjYiTiA3N8KwMDEnMjQuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Cofia Farm Location"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cofia-brown/90 to-transparent p-6">
+                <h3 className="font-playfair text-xl font-bold text-white mb-2">Visit Our Farms</h3>
+                <p className="font-poppins text-white/90 text-sm">
+                  1172b, Panatham Patti, Metrathi, Tamil Nadu 642203
+                </p>
               </div>
             </div>
             

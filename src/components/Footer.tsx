@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="relative z-10">
         {/* Main Footer Content */}
         <div className="container mx-auto px-6 py-16">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-1 space-y-6">
               <div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 />
                 <p className="text-cofia-cream/80 font-poppins leading-relaxed text-sm">
                   Premium coconut products crafted with authentic ingredients, 
-                  trusted by over 10 million customers worldwide.
+                  trusted by over 1000+ customers worldwide.
                 </p>
               </div>
               
@@ -116,22 +116,6 @@ const Footer = () => {
               </ul>
             </div>
             
-            {/* Support */}
-            <div>
-              <h4 className="font-poppins font-semibold mb-6">Support</h4>
-              <ul className="space-y-3">
-                {footerLinks.support.map((link, index) => (
-                  <li key={index}>
-                    <a 
-                      href={link.href}
-                      className="text-cofia-cream/70 hover:text-cofia-cream font-poppins text-sm transition-colors duration-300"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
         
@@ -139,30 +123,9 @@ const Footer = () => {
         <div className="border-t border-cofia-cream/20">
           <div className="container mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-cofia-cream/60 font-poppins text-sm">
+              <p className="text-cofia-cream/60 font-poppins text-sm text-center md:text-left w-full">
                 © {currentYear} Cofia Coconut Products. All rights reserved.
               </p>
-              
-              <div className="flex gap-6">
-                <a 
-                  href="#" 
-                  className="text-cofia-cream/60 hover:text-cofia-cream font-poppins text-sm transition-colors duration-300"
-                >
-                  Privacy Policy
-                </a>
-                <a 
-                  href="#" 
-                  className="text-cofia-cream/60 hover:text-cofia-cream font-poppins text-sm transition-colors duration-300"
-                >
-                  Terms of Service
-                </a>
-                <a 
-                  href="#" 
-                  className="text-cofia-cream/60 hover:text-cofia-cream font-poppins text-sm transition-colors duration-300"
-                >
-                  Sitemap
-                </a>
-              </div>
             </div>
           </div>
         </div>
