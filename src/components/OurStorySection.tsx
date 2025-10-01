@@ -48,7 +48,7 @@ const OurStorySection = () => {
             
             <p className="text-lg text-cofia-dark-brown leading-relaxed font-poppins">
               From our traditional roots to modern innovation, we've maintained our commitment to quality, 
-              sustainability, and the timeless taste that has delighted over 10 million customers worldwide.
+              sustainability, and the timeless taste that has delighted over 1000+ customers worldwide.
             </p>
           </div>
           
