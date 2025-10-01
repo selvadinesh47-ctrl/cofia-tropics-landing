@@ -34,7 +34,7 @@ const ContactSection = () => {
             <div className="bg-white rounded-2xl p-6 md:p-8 space-y-6 shadow-[var(--shadow-card)] border border-cofia-tan/20">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <Phone className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
+                  <Phone className="w-7 h-7 md:w-8 md:h-8 text-cofia-cream" strokeWidth={2} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Phone</p>
@@ -49,7 +49,7 @@ const ContactSection = () => {
               
               <div className="flex items-start gap-4 pt-2 border-t border-cofia-tan/20">
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <Mail className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
+                  <Mail className="w-7 h-7 md:w-8 md:h-8 text-cofia-cream" strokeWidth={2} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Email</p>
@@ -64,7 +64,7 @@ const ContactSection = () => {
               
               <div className="flex items-start gap-4 pt-2 border-t border-cofia-tan/20">
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-cofia-brown rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <MapPin className="w-6 h-6 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
+                  <MapPin className="w-7 h-7 md:w-8 md:h-8 text-cofia-cream" strokeWidth={2} fill="none" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Address</p>
