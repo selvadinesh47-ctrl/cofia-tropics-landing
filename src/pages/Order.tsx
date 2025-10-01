@@ -205,55 +205,6 @@ Please confirm availability and delivery details.`;
                 </Card>
               ))}
             </div>
-
-            {/* Cart Summary Below Products */}
-            {cart.length > 0 && (
-              <Card className="border-cofia-tan/30 mt-6 lg:hidden">
-                <CardHeader>
-                  <CardTitle className="font-playfair text-xl text-cofia-dark-brown flex items-center gap-2">
-                    <ShoppingCart className="w-5 h-5" />
-                    Your Cart ({getTotalItems()} items)
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {cart.map(item => (
-                    <div key={item.id} className="flex items-center justify-between p-3 bg-cofia-cream/30 rounded-lg">
-                      <div className="flex-1">
-                        <p className="font-poppins font-medium text-cofia-dark-brown text-sm">
-                          {item.name}
-                        </p>
-                        <p className="text-cofia-brown font-semibold">₹{item.price * item.quantity}</p>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="w-8 h-8 p-0"
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                        >
-                          <Minus className="w-3 h-3" />
-                        </Button>
-                        <span className="w-8 text-center font-poppins">{item.quantity}</span>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="w-8 h-8 p-0"
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                        >
-                          <Plus className="w-3 h-3" />
-                        </Button>
-                      </div>
-                    </div>
-                  ))}
-                  <div className="border-t border-cofia-tan/30 pt-4">
-                    <div className="flex justify-between items-center">
-                      <span className="font-playfair text-lg font-bold text-cofia-dark-brown">Total:</span>
-                      <span className="font-playfair text-xl font-bold text-cofia-brown">₹{getTotalAmount()}</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
           </div>
 
           {/* Cart & Order Section */}
