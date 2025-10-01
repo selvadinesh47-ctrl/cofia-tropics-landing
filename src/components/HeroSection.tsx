@@ -4,7 +4,7 @@ import heroProduct from "@/assets/hero-coconut-product.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-cofia-cresam to-cofia-tan/10 relative overflow-hidden pt-20">
+    <section className="min-h-screen bg-gradient-to-br from-cofia-cresam to-cofia-tan/10 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="h-full w-full bg-gradient-to-br from-cofia-tan/5 to-cofia-green/5"></div>

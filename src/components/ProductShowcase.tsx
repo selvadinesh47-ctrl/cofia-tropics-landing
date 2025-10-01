@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import vv from "@/assets/vv.jpg";
 import sp from "@/assets/sp.jpg";
 import gc from "@/assets/gc.jpg";
 
 const ProductShowcase = () => {
+  const navigate = useNavigate();
+  
   const products = [
     {
       id: 1,
@@ -50,6 +53,7 @@ const ProductShowcase = () => {
             <div 
               key={product.id}
               className="group cursor-pointer transform hover:-translate-y-2 transition-all duration-500"
+              onClick={() => navigate('/order')}
             >
               <div className="bg-white rounded-3xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-premium)] transition-shadow duration-500 overflow-hidden">
                 {/* Product Image */}
@@ -95,7 +99,10 @@ const ProductShowcase = () => {
           <p className="text-cofia-dark-brown/60 font-poppins mb-4">
             Want to try all flavors?
           </p>
-          <button className="bg-cofia-brown text-cofia-cream px-8 py-3 rounded-full font-poppins font-semibold hover:bg-cofia-dark-brown transition-colors duration-300 shadow-[var(--shadow-button)]">
+          <button 
+            onClick={() => navigate('/order')}
+            className="bg-cofia-brown text-cofia-cream px-8 py-3 rounded-full font-poppins font-semibold hover:bg-cofia-dark-brown transition-colors duration-300 shadow-[var(--shadow-button)]"
+          >
             Shop Complete Collection
           </button>
         </div>
