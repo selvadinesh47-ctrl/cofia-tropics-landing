@@ -13,7 +13,7 @@ const ContactSection = () => {
             {/* Map Location */}
             <div className="relative h-80 lg:h-full min-h-[400px] rounded-3xl overflow-hidden shadow-[var(--shadow-premium)]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0987!2d77.0234!3d10.4321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI1JzU1LjYiTiA3N8KwMDEnMjQuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5826766984363!2d77.0086628!3d10.9702476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85f4e85d1bcb7%3A0x7e4e4f9b8e6c5a1f!2s1172b%2C%20Panatham%20Patti%2C%20Metrathi%2C%20Tamil%20Nadu%20642203!5e0!3m2!1sen!2sin!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
