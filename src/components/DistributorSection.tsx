@@ -44,7 +44,7 @@ const DistributorSection = () => {
                 <p className="text-xs text-cofia-dark-brown/60 font-poppins">Customers</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-playfair font-bold text-cofia-brown">2+</p>
+                <p className="text-2xl font-playfair font-bold text-cofia-brown">1+</p>
                 <p className="text-xs text-cofia-dark-brown/60 font-poppins">Countries</p>
               </div>
               <div className="text-center">

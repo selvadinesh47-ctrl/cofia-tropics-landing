@@ -75,11 +75,11 @@ const USPBanner = () => {
                 <p className="text-sm text-cofia-cream/70 font-poppins">Happy Customers</p>
               </div>
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">2+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">1+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Countries Served</p>
               </div>
               <div>
-                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">2+</p>
+                <p className="text-3xl font-playfair font-bold text-cofia-cream mb-2">1+</p>
                 <p className="text-sm text-cofia-cream/70 font-poppins">Years Experience</p>
               </div>
             </div>
