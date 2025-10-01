@@ -55,26 +55,25 @@ const Footer = () => {
                 <h4 className="font-poppins font-semibold mb-4">Follow Us</h4>
                 <div className="flex gap-3">
                   <a 
-                    href="#" 
+                    href="https://www.instagram.com/cofia_india/?igsh=MWlwMDBuNDMxdzg2cQ%3D%3D" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
+                    aria-label="Visit Cofia on Instagram"
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a 
-                    href="#" 
-                    className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
-                  >
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                  <a 
                     href="mailto:hello@cofia.com" 
                     className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
+                    aria-label="Email Cofia"
                   >
                     <Mail className="w-5 h-5" />
                   </a>
                   <a 
-                    href="tel:+919876543210" 
+                    href="tel:+919994898713" 
                     className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
+                    aria-label="Call Cofia"
                   >
                     <Phone className="w-5 h-5" />
                   </a>
