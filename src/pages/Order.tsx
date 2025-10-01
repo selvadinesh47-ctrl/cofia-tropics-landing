@@ -157,22 +157,13 @@ Please confirm availability and delivery details.`;
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
-              {products.map(product => {
-                const cartItem = cart.find(item => item.id === product.id);
-                const quantity = cartItem?.quantity || 0;
-                
-                return (
-                  <Card key={product.id} className="border-cofia-tan/30 hover:shadow-[var(--shadow-premium)] transition-all duration-300 relative overflow-hidden">
-                    <div className="absolute top-3 right-3 z-10 flex gap-2">
-                      {quantity > 0 && (
-                        <Badge className="bg-cofia-brown text-cofia-cream font-poppins font-bold px-3 py-1 shadow-md">
-                          {quantity} in cart
-                        </Badge>
-                      )}
-                      <Badge variant="destructive" className="bg-cofia-spice text-cofia-cream font-poppins font-semibold px-3 py-1 shadow-md">
-                        {product.discount}
-                      </Badge>
-                    </div>
+              {products.map(product => (
+                <Card key={product.id} className="border-cofia-tan/30 hover:shadow-[var(--shadow-premium)] transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute top-3 right-3 z-10">
+                    <Badge variant="destructive" className="bg-cofia-spice text-cofia-cream font-poppins font-semibold px-3 py-1 shadow-md">
+                      {product.discount}
+                    </Badge>
+                  </div>
                   <CardHeader className="pb-4">
                     <div className="relative overflow-hidden rounded-lg mb-4 group">
                       <img
@@ -212,8 +203,7 @@ Please confirm availability and delivery details.`;
                     </div>
                   </CardContent>
                 </Card>
-                );
-              })}
+              ))}
             </div>
           </div>
 
