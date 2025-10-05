@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import cofiaLogo from "@/assets/cofia-logo.png";
 import heroProduct from "@/assets/hero-coconut-product.jpg";
 
+
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="min-h-screen bg-gradient-to-br from-cofia-cresam to-cofia-tan/10 relative overflow-hidden">
       {/* Background Pattern */}
@@ -32,7 +35,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-cofia-dark-brown/80 font-poppins leading-relaxed max-w-xl">
-                Authentic coconut snacks crafted for the world. Experience the pure taste of premium coconut products, trusted by millions globally.
+                Authentic coconut snacks crafted for the world. Experience the pure taste of premium coconut products, trusted by thousands globally.
               </p>
             </div>
             
@@ -42,7 +45,7 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg" 
                 className="min-w-[160px]"
-                onClick={() => window.location.href = '/order'}
+                onClick={() => navigate('/order')}
               >
                 Shop Now
               </Button>
