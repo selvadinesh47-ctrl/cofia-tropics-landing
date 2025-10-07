@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Order from "./pages/Order";
 import NotFound from "./pages/NotFound";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const queryClient = new QueryClient();
 
@@ -14,6 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Analytics />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
@@ -24,6 +27,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  
 );
 
 export default App;
