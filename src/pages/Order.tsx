@@ -92,12 +92,23 @@ const Order = () => {
     );
   };
 
+  const COURIER_CHARGE = 50;
+
   const getTotalAmount = () => {
     return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
 
   const getTotalItems = () => {
     return cart.reduce((total, item) => total + item.quantity, 0);
+  };
+
+  const isFreeDelivery = () => {
+    return getTotalItems() >= 3;
+  };
+
+  const getFinalAmount = () => {
+    const subtotal = getTotalAmount();
+    return isFreeDelivery() ? subtotal : subtotal + COURIER_CHARGE;
   };
 
   const handlePlaceOrder = () => {
@@ -117,7 +128,9 @@ Address: ${customerInfo.address}
 Order Details:
 ${orderDetails}
 
-Total Amount: ₹${getTotalAmount()}
+Subtotal: ₹${getTotalAmount()}
+Courier Charge: ${isFreeDelivery() ? 'FREE' : `₹${COURIER_CHARGE}`}
+Final Total: ₹${getFinalAmount()}
 
 Please confirm availability and delivery details.`;
 
@@ -253,10 +266,36 @@ Please confirm availability and delivery details.`;
                         </div>
                       </div>
                     ))}
-                    <div className="border-t border-cofia-tan/30 pt-4">
-                      <div className="flex justify-between items-center">
-                        <span className="font-playfair text-lg font-bold text-cofia-dark-brown">Total:</span>
-                        <span className="font-playfair text-xl font-bold text-cofia-brown">₹{getTotalAmount()}</span>
+                    <div className="border-t border-cofia-tan/30 pt-4 space-y-3">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="font-poppins text-cofia-dark-brown">Subtotal:</span>
+                        <span className="font-poppins text-cofia-dark-brown">₹{getTotalAmount()}</span>
+                      </div>
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="font-poppins text-cofia-dark-brown">Courier Charge:</span>
+                        {isFreeDelivery() ? (
+                          <span className="font-poppins text-cofia-green font-semibold">FREE</span>
+                        ) : (
+                          <span className="font-poppins text-cofia-dark-brown">₹{COURIER_CHARGE}</span>
+                        )}
+                      </div>
+                      {!isFreeDelivery() && (
+                        <div className="bg-cofia-green/10 border border-cofia-green/30 rounded-lg p-3">
+                          <p className="text-xs font-poppins text-cofia-dark-brown">
+                            🎉 Add {3 - getTotalItems()} more item{3 - getTotalItems() > 1 ? 's' : ''} for FREE delivery!
+                          </p>
+                        </div>
+                      )}
+                      {isFreeDelivery() && (
+                        <div className="bg-cofia-green/10 border border-cofia-green/30 rounded-lg p-3">
+                          <p className="text-xs font-poppins text-cofia-green font-semibold">
+                            ✓ You've qualified for FREE delivery!
+                          </p>
+                        </div>
+                      )}
+                      <div className="border-t border-cofia-tan/30 pt-3 flex justify-between items-center">
+                        <span className="font-playfair text-lg font-bold text-cofia-dark-brown">Final Total:</span>
+                        <span className="font-playfair text-xl font-bold text-cofia-brown">₹{getFinalAmount()}</span>
                       </div>
                     </div>
                   </>
