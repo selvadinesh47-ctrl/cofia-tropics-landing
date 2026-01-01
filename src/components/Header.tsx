@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import cofiaLogo from "@/assets/cofia-logo.png";
+import cofiaLogo from "@/assets/cofia-logo-new.png";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
