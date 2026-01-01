@@ -64,7 +64,7 @@ const Footer = () => {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a 
-                    href="mailto:info@cofia.com" 
+                    href="mailto:info@cofia.in" 
                     className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
                     aria-label="Email Cofia"
                   >

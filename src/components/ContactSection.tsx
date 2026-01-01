@@ -54,10 +54,10 @@ const ContactSection = () => {
                 <div className="flex-1 min-w-0">
                   <p className="font-poppins font-bold text-cofia-dark-brown text-base md:text-lg mb-1">Email</p>
                   <a 
-                    href="mailto:info@cofia.com"
+                    href="mailto:info@cofia.in"
                     className="text-cofia-brown font-poppins font-medium text-base md:text-lg hover:underline block break-all"
                   >
-                    info@cofia.com
+                    info@cofia.in
                   </a>
                 </div>
               </div>
