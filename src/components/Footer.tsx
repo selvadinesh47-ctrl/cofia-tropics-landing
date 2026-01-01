@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail, Phone } from "lucide-react";
-import cofiaLogo from "@/assets/cofia-logo.png";
+import cofiaLogo from "@/assets/logo-cofia.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -64,7 +64,7 @@ const Footer = () => {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a 
-                    href="mailto:hello@cofia.com" 
+                    href="mailto:info@cofia.com" 
                     className="w-10 h-10 bg-cofia-cream/10 rounded-full flex items-center justify-center hover:bg-cofia-cream/20 transition-colors duration-300"
                     aria-label="Email Cofia"
                   >

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import cofiaLogo from "@/assets/cofia-logo.png";
+import cofiaLogo from "@/assets/logo-cofia.svg";
 import heroProduct from "@/assets/hero-coconut-product.jpg";
 
 
