@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Plus, Minus, ShoppingCart, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import cofiaLogo from "@/assets/cofia-logo.png";
+import cofiaLogo from "@/assets/logo-cofia.svg";
 import spImage from "@/assets/sp.jpg";
 import gcImage from "@/assets/gc.jpg";
 import vvImage from "@/assets/vv.jpg";
