@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail, Phone } from "lucide-react";
-import cofiaLogo from "@/assets/cofia-logo-new.png";
+import cofiaLogo from "@/assets/cofia-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,10 +39,10 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1 space-y-6">
               <div>
-              <img 
+                <img 
                   src={cofiaLogo} 
                   alt="Cofia" 
-                  className="h-12 w-auto object-contain mb-4"
+                  className="h-12 w-auto object-contain filter brightness-0 invert mb-4"
                 />
                 <p className="text-cofia-cream/80 font-poppins leading-relaxed text-sm">
                   Premium coconut products crafted with authentic ingredients, 

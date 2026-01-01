@@ -34,11 +34,11 @@ const products: Product[] = [
   },
   {
     id: "2", 
-    name: "Golden Crunch Coconut",
+    name: "Garlic Crunch Coconut",
     price: 76,
     originalPrice: 80,
     image: gcImage,
-    description: "Classic toasted coconut perfection",
+    description: "Aromatic garlic with crispy coconut perfection",
     weight: "50g",
     discount: "5% OFF"
   },
