@@ -25,32 +25,32 @@ const products: Product[] = [
   {
     id: "1",
     name: "Spice Pop Coconut",
-    price: 76,
-    originalPrice: 80,
+    price: 56,
+    originalPrice: 70,
     image: spImage,
     description: "Bold spices meet premium coconut crunch",
     weight: "50g",
-    discount: "5% OFF"
+    discount: "20% OFF"
   },
   {
     id: "2", 
     name: "Golden Crunch Coconut",
-    price: 76,
-    originalPrice: 80,
+    price: 56,
+    originalPrice: 70,
     image: gcImage,
     description: "Classic toasted coconut perfection",
     weight: "50g",
-    discount: "5% OFF"
+    discount: "20% OFF"
   },
   {
     id: "3",
     name: "Vanilla Velvet Coconut",
-    price: 76,
-    originalPrice: 80,
+    price: 56,
+    originalPrice: 70,
     image: vvImage,
     description: "Smooth vanilla essence with coconut luxury",
     weight: "50g",
-    discount: "5% OFF"
+    discount: "20% OFF"
   }
 ];
 
