@@ -131,7 +131,7 @@ Order Details:
 ${orderDetails}
 
 Subtotal: ₹${getTotalAmount()}
-Courier Charge: ${isFreeDelivery() ? 'FREE' : `₹${COURIER_CHARGE}`}
+Courier Charge: ${COURIER_CHARGE_THRESHOLD && isFreeDelivery() ? 'FREE' : `₹${COURIER_CHARGE}`}
 Final Total: ₹${getFinalAmount()}
 
 Please confirm availability and delivery details.`;
