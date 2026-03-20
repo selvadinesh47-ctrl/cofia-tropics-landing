@@ -29,7 +29,7 @@ const products: Product[] = [
     originalPrice: 70,
     image: spImage,
     description: "Bold spices meet premium coconut crunch",
-    weight: "50g",
+    weight: "60g",
     discount: "20% OFF"
   },
   {
