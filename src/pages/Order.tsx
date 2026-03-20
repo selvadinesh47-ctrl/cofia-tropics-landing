@@ -92,7 +92,9 @@ const Order = () => {
     );
   };
 
-  const COURIER_CHARGE = 50;
+  const COURIER_CHARGE = 80;
+  const COURIER_CHARGE_THRESHOLD = false;
+
 
   const getTotalAmount = () => {
     return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
@@ -108,7 +110,7 @@ const Order = () => {
 
   const getFinalAmount = () => {
     const subtotal = getTotalAmount();
-    return isFreeDelivery() ? subtotal : subtotal + COURIER_CHARGE;
+    return COURIER_CHARGE_THRESHOLD && isFreeDelivery() ? subtotal : subtotal + COURIER_CHARGE;
   };
 
   const handlePlaceOrder = () => {
@@ -273,20 +275,20 @@ Please confirm availability and delivery details.`;
                       </div>
                       <div className="flex justify-between items-center text-sm">
                         <span className="font-poppins text-cofia-dark-brown">Courier Charge:</span>
-                        {isFreeDelivery() ? (
+                        {COURIER_CHARGE_THRESHOLD && isFreeDelivery()  ? (
                           <span className="font-poppins text-cofia-green font-semibold">FREE</span>
                         ) : (
                           <span className="font-poppins text-cofia-dark-brown">₹{COURIER_CHARGE}</span>
                         )}
                       </div>
-                      {!isFreeDelivery() && (
+                      {COURIER_CHARGE_THRESHOLD &&  !isFreeDelivery() && (
                         <div className="bg-cofia-green/10 border border-cofia-green/30 rounded-lg p-3">
                           <p className="text-xs font-poppins text-cofia-dark-brown">
                             🎉 Add {3 - getTotalItems()} more item{3 - getTotalItems() > 1 ? 's' : ''} for FREE delivery!
                           </p>
                         </div>
                       )}
-                      {isFreeDelivery() && (
+                      {COURIER_CHARGE_THRESHOLD && isFreeDelivery() && (
                         <div className="bg-cofia-green/10 border border-cofia-green/30 rounded-lg p-3">
                           <p className="text-xs font-poppins text-cofia-green font-semibold">
                             ✓ You've qualified for FREE delivery!
